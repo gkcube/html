@@ -1,8 +1,4 @@
-<div id="mt1">
-  <div id="language1" hidden="">eng</div>
-  
-  
-<div class="owl-carousel owl-theme">
+
   
   
  
@@ -96,62 +92,3 @@
 <ch2 hidden><button class="optionbutton correct1">Correct Answer!</button></ch2>
 
 </div>
-</div>
-  </div>
-
-
-
-  
-<next-previous-buttons>
-<button class="goshowleft" onclick="mylanguage();"><div id="change">GO TO<br/>BENGALI</div></button>
-  
-<button class="goshowleft goshowright" onclick="location.reload();"><div id="change2">RESTART<br/>QUIZ</div></button>
-  
-<button class="next-previous next-left"><i class="material-icons">arrow_back_ios</i></button>
-
-<button class="next-previous next-right"><i class="material-icons">arrow_forward_ios</i></button>
-  
-<next-previous-buttons>
-    
-    
-   <script>
-     
-     
-     
-function mylanguage() {
-var x = document.getElementById("mt1");
-var language = document.getElementById("language1");
-  var change = document.getElementById("change");
-var i;
-var tiger = x.getElementsByTagName("tiger");
-var lion = x.getElementsByTagName("lion");
-var cat = x.getElementsByTagName("cat");
-var deer = x.getElementsByTagName("deer");
-  
-  
-  
-  
-  for (i = 0; i < tiger.length; i++) {if (language.innerHTML === "eng")
-  {tiger[i].innerHTML = "<ben>বাঘ";} else {tiger[i].innerHTML = "Tiger";}}
-   
-  for (i = 0; i < lion.length; i++) {if (language.innerHTML === "eng")
-  {lion[i].innerHTML = "<ben>সিংহ";} else {lion[i].innerHTML = "Lion";}}
-  
-  for (i = 0; i < deer.length; i++) {if (language.innerHTML === "eng")
-  {deer[i].innerHTML = "<ben>হরিণ";} else {deer[i].innerHTML = "Deer";}}
-  
-  for (i = 0; i < cat.length; i++) {if (language.innerHTML === "eng")
-  {cat[i].innerHTML = "<ben>বিড়াল";} else {cat[i].innerHTML = "Cat";}}
-  
-  if (language.innerHTML === "eng")
-  {change.innerHTML = "GO TO<br/>ENGLISH";} else {change.innerHTML = "GO TO<br/>BENGALI";}
-  
-  if (language.innerHTML === "eng")
-  {language.innerHTML = "bng";} else {language.innerHTML = "eng";}
-  
-  
-  }
-     
-    
-
-</script>
