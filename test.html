@@ -1,1 +1,200 @@
-TEST INCLUDING
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+
+<style>
+body {overflow:hidden;}
+.popup2 {background-color:white;width:100%;height:100vh;top:54px;left:0;position:fixed; z-index:100;text-align:center;color:black}
+
+.loader {margin-left:calc(50% - 20px); margin-top:200px;border: 6px solid #f3f3f3;border-radius: 50%;border-top: 6px solid #3498db;width: 20px;height: 20px; animation: spin 1s linear infinite;z-index:100;}
+  @keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}
+  
+  
+</style>
+
+<script>
+  $(document).ready(function() {
+    if(sessionStorage.getItem('popState') === 'shown'){$("#popup2").delay(000).fadeOut(); $('body').css({'overflow':'visible'});} 
+    
+  if(sessionStorage.getItem('popState') != 'shown'){sessionStorage.setItem('popState','shown')} 
+  $("#change2").click(function(){$("#popup2").show(); });  
+  
+  var owl = $('.owl-carousel');
+owl.owlCarousel({loop:true, margin:5,nav:false,items: 1,dots: false,slideBy: 2,});
+$('.next-right').click(function() {owl.trigger('next.owl.carousel');});
+$('.next-left').click(function() {owl.trigger('prev.owl.carousel');});
+  
+  
+  });
+  
+window.onload = function() {$("#popup2").delay(000).fadeOut(); $('body').css({'overflow':'visible'}); };
+</script>
+
+<div id="popup2">
+<div class="popup2"><div class="loader"></div><br/>LOADING</div></div>
+
+
+<script>
+$(document).ready(function(){
+});
+
+</script>
+
+
+<div id="mt1">
+  <div id="language1" hidden="">eng</div>
+  
+  
+<div class="owl-carousel owl-theme">
+  
+  
+ 
+   
+  <!--ANIMAL-3-->
+<!---------------------------------->
+        
+<div class="mytable"><div class="corner-page-number">3</div>
+<div class="image-wrapper">
+<img src="https://1.bp.blogspot.com/-_TAX2cbTJYw/XyLSaQUWA5I/AAAAAAAAAwg/t1k2BC5whvMlO7Qc0fIJnJPns9DgJtkLACLcBGAsYHQ/s0/Apricot-1.jpg"/></div>
+
+<div align="center">
+  
+<wm1><button class="wrong"><i class="material-icons">mood_bad</i></button></wm1>
+
+<cm1><button class="correct"><i class="material-icons">mood</i></button></cm1>
+
+<div class="touch-option">Touch The Correct Option !</div>
+</div>
+
+<wb1><button class="optionbutton wrongbutton wrong1" onclick="WrongAudio();wb1();"><tiger>Tiger</tiger></button></wb1>
+
+<cb1><button class="optionbutton" onclick="cb1();CorrectAudio();"><lion>Lion</lion></button></cb1>
+  
+<ch1 hidden><button class="optionbutton correct1" onclick="CorrectAudio();"><lion>Lion</lion></button></ch1>
+  
+<wb1><button class="optionbutton wrongbutton wrong1" id="wrong1" onclick="WrongAudio();wb1();"><deer>Deer</deer></button></wb1>
+
+<wb1><button class="optionbutton wrongbutton wrong1" id="wrong1" onclick="WrongAudio();wb1();"><cat>Cat</cat></button></wb1>
+  
+<ch1 hidden><button class="optionbutton correct1">Correct Answer!</button></ch1>
+
+</div>
+    
+  <!--ANIMAL-4-->
+<!---------------------------------->
+          
+<div class="mytable"><div class="corner-page-number">4</div>
+<div class="image-wrapper">
+<img src="https://1.bp.blogspot.com/-K2aNW_cZeCI/XyLSazFNsgI/AAAAAAAAAwo/SR17shHojqkz8G9AxS1imSp_D3yTRid3ACLcBGAsYHQ/s0/Banana-1.jpg"/></div>
+
+<div align="center">
+
+<wm1><button class="wrong"><i class="material-icons">mood_bad</i></button></wm1>
+
+<cm2><button class="correct"><i class="material-icons">mood</i></button></cm2>
+
+<div class="touch-option"><ben>সঠিক অপশনটি টাচ করুন !</div>
+</div>
+
+<wb2><button class="optionbutton wrongbutton wrong1" onclick="WrongAudio();wb2();"><tiger>Tiger</tiger></button></wb2>
+
+<cb2><button class="optionbutton" onclick="cb2();CorrectAudio();"><lion>Lion</lion></button></cb2>
+  
+<ch2 hidden><button class="optionbutton correct1" onclick="CorrectAudio();"><lion>Lion</lion></button></ch2>
+  
+<wb2><button class="optionbutton wrongbutton wrong1" id="wrong1" onclick="WrongAudio();wb2();"><deer>Deer</deer></button></wb2>
+
+<wb2><button class="optionbutton wrongbutton wrong1" id="wrong1" onclick="WrongAudio();wb2();"><cat>Cat</cat></button></wb2>
+  
+<ch2 hidden><button class="optionbutton correct1">Correct Answer!</button></ch2>
+
+</div>
+    
+<!--ANIMAL-5-->
+<!---------------------------------->
+  
+<div class="mytable"><div class="corner-page-number">5</div>
+<div class="image-wrapper">
+<img src="https://1.bp.blogspot.com/-c99d8BY7W28/XyLSbRJRNxI/AAAAAAAAAws/DCog9HB6sj4OqO_BbtBFMuU4D2BhhckzACLcBGAsYHQ/s0/Blackberry-1.jpg"/></div>
+
+<div align="center">
+
+<wm2><button class="wrong"><i class="material-icons">mood_bad</i></button></wm2>
+
+<cm2><button class="correct"><i class="material-icons">mood</i></button></cm2>
+
+<div class="touch-option"><ben>সঠিক অপশনটি টাচ করুন !</div>
+</div>
+
+<wb2><button class="optionbutton wrongbutton wrong1" onclick="WrongAudio();wb2();"><tiger>Tiger</tiger></button></wb2>
+
+<cb2><button class="optionbutton" onclick="cb2();CorrectAudio();"><lion>Lion</lion></button></cb2>
+  
+<ch2 hidden><button class="optionbutton correct1" onclick="CorrectAudio();"><lion>Lion</lion></button></ch2>
+  
+<wb2><button class="optionbutton wrongbutton wrong1" id="wrong1" onclick="WrongAudio();wb2();"><deer>Deer</deer></button></wb2>
+
+<wb2><button class="optionbutton wrongbutton wrong1" id="wrong1" onclick="WrongAudio();wb2();"><cat>Cat</cat></button></wb2>
+  
+<ch2 hidden><button class="optionbutton correct1">Correct Answer!</button></ch2>
+
+</div>
+</div>
+  </div>
+
+
+
+  
+<next-previous-buttons>
+<button class="goshowleft" onclick="mylanguage();"><div id="change">GO TO<br/>BENGALI</div></button>
+  
+<button class="goshowleft goshowright" onclick="location.reload();"><div id="change2">RESTART<br/>QUIZ</div></button>
+  
+<button class="next-previous next-left"><i class="material-icons">arrow_back_ios</i></button>
+
+<button class="next-previous next-right"><i class="material-icons">arrow_forward_ios</i></button>
+  
+<next-previous-buttons>
+    
+    
+   <script>
+     
+     
+     
+function mylanguage() {
+var x = document.getElementById("mt1");
+var language = document.getElementById("language1");
+  var change = document.getElementById("change");
+var i;
+var tiger = x.getElementsByTagName("tiger");
+var lion = x.getElementsByTagName("lion");
+var cat = x.getElementsByTagName("cat");
+var deer = x.getElementsByTagName("deer");
+  
+  
+  
+  
+  for (i = 0; i < tiger.length; i++) {if (language.innerHTML === "eng")
+  {tiger[i].innerHTML = "<ben>বাঘ";} else {tiger[i].innerHTML = "Tiger";}}
+   
+  for (i = 0; i < lion.length; i++) {if (language.innerHTML === "eng")
+  {lion[i].innerHTML = "<ben>সিংহ";} else {lion[i].innerHTML = "Lion";}}
+  
+  for (i = 0; i < deer.length; i++) {if (language.innerHTML === "eng")
+  {deer[i].innerHTML = "<ben>হরিণ";} else {deer[i].innerHTML = "Deer";}}
+  
+  for (i = 0; i < cat.length; i++) {if (language.innerHTML === "eng")
+  {cat[i].innerHTML = "<ben>বিড়াল";} else {cat[i].innerHTML = "Cat";}}
+  
+  if (language.innerHTML === "eng")
+  {change.innerHTML = "GO TO<br/>ENGLISH";} else {change.innerHTML = "GO TO<br/>BENGALI";}
+  
+  if (language.innerHTML === "eng")
+  {language.innerHTML = "bng";} else {language.innerHTML = "eng";}
+  
+  
+  }
+     
+    
+
+</script>
