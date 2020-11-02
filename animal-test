@@ -1,0 +1,333 @@
+<body>
+
+
+<div style="height:54px;">
+</div>
+<div id="sticky">
+<div class="subhead">
+<button id="closebtn" onclick="window.history.back()"><i class="material-icons" style="font-size:25px;"><toolicon>arrow_back</toolicon></i></button>
+
+<a href="/2020/01/share-app.html"><button id="closebtnr"><i class="material-icons" style="font-size:25px;">&#xe80d</i></button></a>
+<quizbtn>
+<button id="score1">Score : </button><button class="sbox1"><input type="number" id="sbox" value="" readonly/></button>
+
+<button class="reset resetb"><i class="material-icons">cached</i><change2>Reset Quiz</change2></button>
+</quizbtn>
+
+</div></div>
+
+
+
+
+
+
+
+<next-previous-buttons>
+  
+<button class="next-previous next-left"><i class="material-icons">arrow_back_ios</i></button>
+  
+  <button class="goshowleft change" onclick="mylanguage();"><i class="material-icons" style="color:#2d456b; font-size:30px;position:absolute;left:30%;">language</i><cl>GO TO<br/>-</cl></button>
+
+<button class="next-previous next-right"><i class="material-icons">arrow_forward_ios</i></button>
+ 
+  
+</next-previous-buttons>
+
+
+<style>
+body {overflow:hidden;}
+</style>
+
+
+<div style="display:none;" id="popup" class="dbox">Reset Quiz and Score<br/><br/><div align="center">
+  <button class="reset resetb2">Cancel</button>
+  <button class="resetbutton resetb2" onclick="location.reload();">Reset</button>
+
+  </div></div>
+
+<div id="popup2" class="popup2" ><div class="loader"></div><br/>LOADING</div>
+<div class="postbody">
+<nbox hidden></nbox>
+<language1 hidden>eng</language1>
+
+<div class="owl-carousel owl-theme">
+   
+<!--ANIMAL-1-TIGER-->
+  
+<div class="mytable"><button class="corner-page-number">1</button>
+<div class="image-wrapper">
+<img src="https://1.bp.blogspot.com/-7ERK1ne2-lE/XrBB7TPDLWI/AAAAAAAAAhg/R5GvcBT3hQ8wfvP3iWGgnyyu2d4DcTC7ACLcBGAsYHQ/s0/tiger-1.jpg"/></div>
+
+<wm1><button class="mood2">-1<br/><i class="material-icons">mood_bad</i></button></wm1>
+<cm1><button class="mood1">+4<br/><i class="material-icons">mood</i></button></cm1>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<wb1>
+<button class="optionbutton wbutton" onclick="wb1();Audio2();"><rhinoceros>Rhinoceros</rhinoceros></button>
+</wb1>
+
+<wb1>
+<button class="optionbutton wbutton" onclick="wb1();Audio2();"><jackal>Jackal</jackal></button>
+</wb1>
+
+<wb1>
+<button class="optionbutton wbutton" onclick="wb1();Audio2();"><cow>Cow</cow></button>
+</wb1>
+
+<cb1>
+<button class="optionbutton cbutton" onclick="cb1();Audio1();"><tiger>Tiger</tiger></button>
+</cb1>
+
+<ch1 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><tiger>Tiger</tiger></button>
+<button class="optionbutton cbutton2"><correctanswer>Correct Answer!</correctanswer></button>
+</ch1>
+
+</div>
+<!--ANIMAL-1-->
+
+<!--ANIMAL-2-Lion-->
+        
+<div class="mytable"><button class="corner-page-number">2</button>
+<div class="image-wrapper">
+<img src="https://1.bp.blogspot.com/-Hg3hFx8lgT8/XqrhJpFrnwI/AAAAAAAAAfo/kBaDQXyD75sirtp_nMM87feMm9Fca0t5QCLcBGAsYHQ/s0/lion-1.jpeg"/></div>
+
+<wm2><button class="mood2">-1<br/><i class="material-icons">mood_bad</i></button></wm2>
+<cm2><button class="mood1">+4<br/><i class="material-icons">mood</i></button></cm2>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<wb2>
+<button class="optionbutton wbutton" onclick="wb2();Audio2();"><tiger>Tiger</tiger></button>
+</wb2>
+
+<cb2>
+<button class="optionbutton cbutton" onclick="cb2();Audio1();"><lion>Lion</lion></button>
+</cb2>
+  
+<wb2>
+<button class="optionbutton wbutton" onclick="wb2();Audio2();"><deer>Deer</deer></button>
+</wb2>
+
+<wb2>
+<button class="optionbutton wbutton" onclick="wb2();Audio2();"><cat>Cat</cat></button>
+</wb2>
+
+<ch2 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><lion>Lion</lion></button>
+<button class="optionbutton cbutton2"><correctanswer>Correct Answer!</correctanswer></button>
+</ch2>
+  
+</div>
+<!--ANIMAL-2-->
+
+
+<!--ANIMAL-3-Elephant-->
+        
+<div class="mytable"><button class="corner-page-number">3</button>
+<div class="image-wrapper">
+<img src="https://3.bp.blogspot.com/-7u_hGqkNWHU/XqwU6UQZhVI/AAAAAAAAAgU/qinJTZv-lb0RCo7o5GValGt-D_d7kzCLACLcBGAsYHQ/s0/elephant-1.jpg"/></div>
+
+<wm3><button class="mood2">-1<br/><i class="material-icons">mood_bad</i></button></wm3>
+<cm3><button class="mood1">+4<br/><i class="material-icons">mood</i></button></cm3>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<wb3>
+<button class="optionbutton wbutton" onclick="wb3();Audio2();"><buffalo>Buffalo</buffalo></button>
+</wb3>
+
+<wb3>
+<button class="optionbutton wbutton" onclick="wb3();Audio2();"><giraffe>Giraffe</giraffe></button>
+</wb3>
+
+<cb3>
+<button class="optionbutton cbutton" onclick="cb3();Audio1();"><elephant>Elephant</elephant></button>
+</cb3>
+
+<wb3>
+<button class="optionbutton wbutton" onclick="wb3();Audio2();"><cow>Cow</cow></button>
+</wb3>
+
+<ch3 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><elephant>Elephant</elephant></button>
+<button class="optionbutton cbutton2"><correctanswer>Correct Answer!</correctanswer></button>
+</ch3>
+  
+</div>
+<!--ANIMAL-3-->
+
+<!--ANIMAL-4-Bear-->
+        
+<div class="mytable"><button class="corner-page-number">4</button>
+<div class="image-wrapper">
+<img src="https://2.bp.blogspot.com/-oko_LZAuoE0/XqwU5qCae7I/AAAAAAAAAgI/RSNlj6PjiwYvzqy1tYgbzZcHvRdwKSOsgCLcBGAsYHQ/s0/bear-1.jpeg"/></div>
+
+<wm4><button class="mood2">-1<br/><i class="material-icons">mood_bad</i></button></wm4>
+<cm4><button class="mood1">+4<br/><i class="material-icons">mood</i></button></cm4>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<wb4>
+<button class="optionbutton wbutton" onclick="wb4();Audio2();"><chimpanzee>Chimpanzee</chimpanzee></button>
+</wb4>
+
+<cb4>
+<button class="optionbutton cbutton" onclick="cb4();Audio1();"><bear>Bear</bear></button>
+</cb4>
+  
+<wb4>
+<button class="optionbutton wbutton" onclick="wb4();Audio2();"><pig>Pig</pig></button>
+</wb4>
+
+<wb4>
+<button class="optionbutton wbutton" onclick="wb4();Audio2();"><lion>Lion</lion></button>
+</wb4>
+
+<ch4 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><bear>Bear</bear></button>
+<button class="optionbutton cbutton2"><correctanswer>Correct Answer!</correctanswer></button>
+</ch4>
+  
+</div>
+<!--ANIMAL-4-->
+
+<!--ANIMAL-5-Squirrel-->
+        
+<div class="mytable"><button class="corner-page-number">5</button>
+<div class="image-wrapper">
+<img src="https://2.bp.blogspot.com/-wqLNX5HMlEU/XqwU79b4f3I/AAAAAAAAAgw/V3BKDfHVHOAQtuiNa5Jy1uRQBX_wOjfLQCLcBGAsYHQ/s0/squirrel-1.jpg"/></div>
+
+<wm5><button class="mood2">-1<br/><i class="material-icons">mood_bad</i></button></wm5>
+<cm5><button class="mood1">+4<br/><i class="material-icons">mood</i></button></cm5>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<cb5>
+<button class="optionbutton cbutton" onclick="cb5();Audio1();"><squirrel>Squirrel</squirrel></button>
+</cb5>
+
+<wb5>
+<button class="optionbutton wbutton" onclick="wb5();Audio2();"><chameleon>Chameleon</chameleon></button>
+</wb5>
+
+<wb5>
+<button class="optionbutton wbutton" onclick="wb5();Audio2();"><kangaroo>Kangaroo</kangaroo></button>
+</wb5>
+
+<wb5>
+<button class="optionbutton wbutton" onclick="wb5();Audio2();"><dog>Dog</dog></button>
+</wb5>
+
+<ch5 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><squirrel>Squirrel</squirrel></button>
+<button class="optionbutton cbutton2"><correctanswer>Correct Answer!</correctanswer></button>
+</ch5>
+
+</div>
+<!--ANIMAL-5-->
+
+<!--ANIMAL-6-Snake-->
+        
+<div class="mytable"><button class="corner-page-number">6</button>
+<div class="image-wrapper">
+<img src="https://4.bp.blogspot.com/-O_b3J0fvTHk/XqwU7qSyurI/AAAAAAAAAgo/k92woh9K5IUdRnmJ07B0Y97cVpdI1vcgwCLcBGAsYHQ/s0/snake-1.jpg"/></div>
+
+<wm6><button class="mood2">-1<br/><i class="material-icons">mood_bad</i></button></wm6>
+<cm6><button class="mood1">+4<br/><i class="material-icons">mood</i></button></cm6>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<wb6>
+<button class="optionbutton wbutton" onclick="wb6();Audio2();"><lizard>Lizard</lizard></button>
+</wb6>
+
+<wb6>
+<button class="optionbutton wbutton" onclick="wb6();Audio2();"><iguana>Iguana</iguana></button>
+</wb6>
+
+<cb6>
+<button class="optionbutton cbutton" onclick="cb6();Audio1();"><snake>Snake</snake></button>
+</cb6>
+
+<wb6>
+<button class="optionbutton wbutton" onclick="wb6();Audio2();"><rat>Rat</rat></button>
+</wb6>
+
+<ch6 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><snake>Snake</snake></button>
+<button class="optionbutton cbutton2"><correctanswer>Correct Answer!</correctanswer></button>
+</ch6>
+  
+</div>
+<!--ANIMAL-6------------------------->
+
+<!--ANIMAL-7-Polecat----------------->
+  
+<div class="mytable"><button class="corner-page-number">7</button>
+<div class="image-wrapper">
+<img src="https://4.bp.blogspot.com/-qQBJ8KCxudQ/XqwU7FqrbdI/AAAAAAAAAgg/cdX1KM6YZpgwvLtkGoWLkFDE12b-eb-eACLcBGAsYHQ/s0/polecat-1.jpg"/></div>
+
+<wm7><button class="mood2">-1<br/><i class="material-icons">mood_bad</i></button></wm7>
+<cm7><button class="mood1">+4<br/><i class="material-icons">mood</i></button></cm7>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<wb7>
+<button class="optionbutton wbutton" onclick="wb7();Audio2();"><otter>Otter</otter></button>
+</wb7>
+
+<wb7>
+<button class="optionbutton wbutton" onclick="wb7();Audio2();"><fox>Fox</fox></button>
+</wb7>
+
+<wb7>
+<button class="optionbutton wbutton" onclick="wb7();Audio2();"><rabbit>Rabbit</rabbit></button>
+</wb7>
+
+<cb7>
+<button class="optionbutton cbutton" onclick="cb7();Audio1();"><polecat>Polecat</polecat></button>
+</cb7>
+
+<ch7 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><polecat>Polecat</polecat></button>
+<button class="optionbutton cbutton2"><correctanswer>Correct Answer!</correctanswer></button>
+</ch7>
+
+</div>
+<!--ANIMAL-7---------------------->
+
+<!--ANIMAL-8-Badger--------------->
+        
+<div class="mytable"><button class="corner-page-number">8</button>
+<div class="image-wrapper">
+<img src="https://4.bp.blogspot.com/-sfGsskI8gE4/XqwU5zufbyI/AAAAAAAAAgM/y8euh6FHpoA96AzGyhbJQT61Skof29bsgCLcBGAsYHQ/s0/badger-1.jpg"/></div>
+
+<wm8><button class="mood2">-1<br/><i class="material-icons">mood_bad</i></button></wm8>
+<cm8><button class="mood1">+4<br/><i class="material-icons">mood</i></button></cm8>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+
+<cb8>
+<button class="optionbutton cbutton" onclick="cb8();Audio1();"><badger>Badger</badger></button>
+</cb8>
+
+<wb8>
+<button class="optionbutton wbutton" onclick="wb8();Audio2();"><pig>Pig</pig></button>
+</wb8>
+
+<wb8>
+<button class="optionbutton wbutton" onclick="wb8();Audio2();"><kangaroo>Kangaroo</kangaroo></button>
+</wb8>
+
+<wb8>
+<button class="optionbutton wbutton" onclick="wb8();Audio2();"><otter>Otter</otter></button>
+</wb8>
+
+<ch8 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><badger>Badger</badger></button>
+<button class="optionbutton cbutton2"><correctanswer>Correct Answer!</correctanswer></button>
+</ch8>
+
+</div>
+<!--ANIMAL-8------------------------------->
+  
+    </div>
+
+</div>
+    </body>
