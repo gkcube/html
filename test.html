@@ -218,7 +218,18 @@ wm1,wm2,wm3,wm4,wm5,wm6,wm7,wm8,wm9,wm10,wm11,wm12,wm13,wm14,wm15,wm16,wm17,wm18
 	
 </style>
 
+<audio id="Audio2" preload="auto">
+  <source src="https://cdn.jsdelivr.net/gh/gkcube/sound@v1.0.0.0/wrong.ogg" type="audio/ogg">
+</source></audio>
+<audio id="Audio1" preload="auto">
+  <source src="https://cdn.jsdelivr.net/gh/gkcube/sound@v1.0.0.0/correct.ogg" type="audio/ogg">
+</source></audio>
 
+<script>
+var x = document.getElementById("Audio2"); function Audio2() { x.currentTime = 0; x.play();}
+var y = document.getElementById("Audio1"); function Audio1() { y.currentTime = 0; y.play();}</script>
+
+<script src='https://cdn.jsdelivr.net/gh/gkcube/js@1.0.0.2/jquery.min.js'></script>
 
 
 
@@ -3157,6 +3168,17 @@ setTimeout(function() {
     
     
     </script>
+
+<script>
+
+window.onload = function() {showpage();};
+$(document).ready(function() {cont(); 
+
+
+});
+$('.loading').click(function(){hidepage();});
+ 
+</script>
 <link rel="prefetch" href="/2020/01/index-english.html?m=1"/>
 <link rel="prefetch" href="/2020/01/index-bengali.html?m=1"/>
     <link rel="prefetch" href="/2020/10/t1.html?m=1"/>
