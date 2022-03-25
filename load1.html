@@ -30,7 +30,7 @@ x.open("GET", f, true);x.send();return;}}}
 $(document).ready(function(){
   var str = window.location.href,
 ur = new URL(str),
-ccc = ur.searchParams.get("c");
+ccc = "/test";
 fetch(url).then(r => r.json()).then((o) => {
 $("body").load("https://cdn.jsdelivr.net/gh/gkcube/html@"+o.object.sha+""+ccc+".html");
 ih1();})
