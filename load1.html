@@ -32,7 +32,7 @@ x.open("GET", f, true);x.send();return;}}}
 $(document).ready(function(){
   
 fetch(url).then(r => r.json()).then((o) => {
-$("body").load("https://cdn.jsdelivr.net/gh/gkcube/html@"+o.object.sha+c);
+$("body").load("https://cdn.jsdelivr.net/gh/gkcube/html@"+o.object.sha+""+c+"");
 ih1();})
     
   
