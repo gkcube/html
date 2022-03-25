@@ -28,11 +28,10 @@ x.open("GET", f, true);x.send();return;}}}
   
   
 $(document).ready(function(){
-  var str = window.location.href,
-ur = new URL(str),
-ccc = "/test";
+  
+var ccc = "/test.html";
 fetch(url).then(r => r.json()).then((o) => {
-$("body").load("https://cdn.jsdelivr.net/gh/gkcube/html@"+o.object.sha+""+ccc+".html");
+$("body").load("https://cdn.jsdelivr.net/gh/gkcube/html@"+o.object.sha+ccc);
 ih1();})
     
   
